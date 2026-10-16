@@ -1,0 +1,15 @@
+<Window x:Class="AplikacjaNotatki.AddNoteWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Dodaj notatkę" Height="250" Width="350" WindowStartupLocation="CenterOwner">
+    <Grid Margin="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Treść notatki:" FontWeight="Bold" Margin="0,0,0,5"/>
+        <TextBox x:Name="txtContent" Grid.Row="1" AcceptsReturn="True" TextWrapping="Wrap" VerticalScrollBarVisibility="Auto"/>
+        <Button x:Name="btnSave" Grid.Row="2" Content="Zatwierdź" Click="BtnSave_Click" Width="100" Height="30" HorizontalAlignment="Right" Margin="0,10,0,0"/>
+    </Grid>
+</Window>
